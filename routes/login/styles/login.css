@@ -1,0 +1,276 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(21, 52, 73);
+    overflow: hidden;
+}
+
+header {
+    margin: 0%;
+    padding: 0%;
+    position: inherit;
+}
+
+.cabecalho_info {
+    overflow: auto;
+    width: 100%;
+    height: 80px;
+}
+
+.cabecalho_info img{
+    width: 55px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.cabecalho_info h1{
+    font-size: 30px;
+    font-family: 'Microsoft YaHei UI', sans-serif;  
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+    float: left;
+    margin-top: 25px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+main .login-container {
+    background-color: rgb(252, 252, 252);
+    width: 490px;
+    height: 450px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .login-container .login-container-info h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(88, 88, 87);
+}
+
+main .login-container .login-container-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 290px;
+}
+
+main .login-container .login-container-info form input {
+    width: 130%;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(109, 108, 108, 0.562);
+}
+main .login-container .login-container-info form input::placeholder {
+    color: rgb(116, 114, 114);
+    font-size: 18px;
+}
+main .login-container .login-container-info form button {
+    width: 130%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(21, 52, 73);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+main .login-container .login-container-info span a:hover {
+    text-decoration: underline;
+}
+
+main .login-container .login-container-info .recuperar_conta_texto:hover {
+    text-decoration: underline;
+}
+
+/* media screen desktop */
+@media only screen and (min-width: 978px) {
+    main {
+        min-height: 50vh;
+    }
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+}
+/* media screen mobile */
+@media only screen and (max-width: 977px) {
+    .cabecalho_info h1 {
+        font-size: 21px;
+    }
+
+    main {
+        min-height: 50vh;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+/* Redimensionar  Formulario de Login */
+
+@media only screen and (max-width: 470px){
+    main .login-container {
+        width: 445px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 460px){
+    main .login-container {
+        width: 440px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 447px){
+    main .login-container {
+        width: 430px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    main .login-container {
+        width: 400px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    main .login-container {
+        width: 380px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 361px){
+    main .login-container {
+        width: 340px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 344px){
+    main .login-container {
+        width: 320px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 322px){
+    main .login-container {
+        width: 300px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 292px){
+    main .login-container {
+        width: 280px;
+        position: fixed;
+    }
+
+    main .login-container .login-container-info form button {
+        max-width: 310px;
+    }
+
+    main .login-container .login-container-info form input {
+        max-width: 310px;
+    }
+}

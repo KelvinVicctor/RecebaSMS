@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(21, 52, 73);
+}
+
+/* importando fontes */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+header {
+    margin: 0%;
+    padding: 0%;
+    position: inherit;
+
+}
+
+.cabecalho_info {
+    overflow: auto;
+    width: 100%;
+    height: 80px;
+}
+
+.cabecalho_info img{
+    width: 55px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.cabecalho_info h1{
+    font-size: 30px;
+    font-family: 'Microsoft YaHei UI', sans-serif;  
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+    float: left;
+    margin-top: 25px;
+    color: aliceblue;
+}
+
+/* media screen mobile */
+@media only screen and (max-width: 977px) {
+    .cabecalho_info h1 {
+        font-size: 21px;
+    }
+
+    .menu_mobile {
+      display: none
+    }
+
+    .cabecalho_info .menu_tablet{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+    
+    .cabecalho_info .menu_tablet_info{
+        align-self: flex-end;
+    }
+    
+    .menu_tablet i {
+        font-size: 1.5rem;
+        color: rgb(102, 100, 100);
+        cursor: pointer;
+        border: 3px solid black;
+        border-radius: 8px;
+        padding-bottom: 0.8rem;
+        padding-left: 0.6rem;
+        padding-right: 0.5rem;
+        padding-inline: 0.8rem;
+        padding-block: 0.5rem;
+    }
+    
+    .menu_tablet ul {
+        background-color: rgb(29, 29, 29);
+        display: none;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        left: 0%;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.9s ease;
+    }
+    
+    .menu_tablet ul li a {
+        color: white;
+        font-size: 1rem;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        display: block;
+        padding: 0.8rem;
+    }
+    
+    .menu_tablet ul li a:hover {
+        text-decoration: underline;
+        background-color: aliceblue;
+        color: rgb(15, 15, 15);
+    }
+
+    .cabecalho_info .menu_desktop {
+        display: none;
+    }
+
+    main .sub_pagina .sub_pagina_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        flex-direction: column;
+        color: white;
+    }
+    main .sub_pagina .sub_pagina_info h1 {
+        font-size: 29px;
+        text-align: center;
+    }
+    
+    main .sub_pagina .sub_pagina_info h3 {
+        margin-top: 20px;
+        font-size: 1.1rem;
+        width: 100%;
+        max-width: 100%
+        padding-left: 1.2rem;
+        text-align: center;
+    }
+    
+    main .sub_pagina .sub_pagina_info .phone_img {
+        width: 150px;
+        rotate: 20deg;
+        margin-top: 50px;
+    }
+    
+    main .sub_pagina .sub_pagina_info .bandeiras {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        margin-right: 40px;
+        flex-direction: row;
+        flex-wrap: wrap
+    }
+    
+    main .sub_pagina .sub_pagina_info .bandeiras img{
+        border-radius: 8px;
+        width: 40px;
+        margin-left: 20px;
+        margin-bottom: 20px
+    }
+    
+    main .sub_pagina .sub_pagina_info .bandeiras span {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        color: rgb(247, 243, 243);
+        padding-left: 0.8rem;
+        padding-top: 0.5rem
+    }
+}
+
+/* media screen desktop */
+
+@media only screen and (min-width:978px) {
+    .menu_mobile {
+        display: none;
+    }
+    .menu_tablet {
+        display: none;
+    }
+    .cabecalho_info .menu_desktop{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10%;
+        margin-top: 31px;
+    }
+    
+    .cabecalho_info .menu_desktop_info{
+        align-self: flex-end;
+    }
+    
+    .cabecalho_info .menu_desktop_info a {
+        color: rgb(141, 139, 139);
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-right: 20px;
+    }
+
+    
+    .cabecalho_info .menu_desktop_info a:hover{
+        color: rgb(235, 228, 228);
+        text-decoration: underline;
+    }
+
+    main .sub_pagina .sub_pagina_info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        flex-direction: column;
+        color: white;
+    }
+    
+    main .sub_pagina .sub_pagina_info h3 {
+        margin-top: 20px;
+        padding-left: 0.5rem;
+        width: 83%;
+        text-align: center;
+    }
+    
+    main .sub_pagina .sub_pagina_info .phone_img {
+        width: 150px;
+        rotate: 20deg;
+        margin-top: 50px;
+    }
+    
+     main .sub_pagina .sub_pagina_info .bandeiras {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    main .sub_pagina .sub_pagina_info .bandeiras img{
+        border-radius: 8px;
+        width: 75px;
+        margin-right: 15px;
+        padding-left: 1.5rem;
+    }
+    
+    main .sub_pagina .sub_pagina_info .bandeiras span {
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        margin-top: 3%;
+        color: rgb(247, 243, 243);
+    }
+
+}

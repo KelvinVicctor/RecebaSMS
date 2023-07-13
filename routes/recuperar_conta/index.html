@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/recuperar_conta.css">
+    <script src="https://kit.fontawesome.com/61cf2d802c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Recuperar sua Conta</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho_info">
+            <img src="/sms_temporario_logo.png" alt="Logo">
+            <h1 translate="no">RecebaSMS.com</h1>
+        </div>
+    </header>
+    <main>
+        <div class="recuperacao-container">
+            <div class="recuperacao-container-info">
+                <h1>Recuperar Conta</h1>
+                <p>Para Recuperar a sua senha. Insira seu email da conta</p>
+                <form class = "recuperar_senha" onsubmit="return false">
+                    <input translate = "no" type="text" name="email" placeholder="Email">
+                    <button translate="no" type="submit" class = "recuperar_conta_button">Redefinir</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script>
+        const home = document.querySelector('.cabecalho_info')
+        home.addEventListener('click', () => {
+           window.location.href = '/'
+        })
+    </script>
+    <script src = "/recuperar.js"></script>
+</body>
+</html>

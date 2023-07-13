@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/registro.css">
+    <script src="https://kit.fontawesome.com/61cf2d802c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Criar Conta</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho_info">
+            <img src="/sms_temporario_logo.png" alt="Logo">
+            <h1 translate="no">RecebaSMS.com</h1>
+        </div>
+    </header>
+    <main>
+        <div class="registro-container">
+            <div class="registro-container-info">
+                <h1 translate="no">Criar Conta</h1>
+                <form translate="no" onsubmit="return false" class="registro-form">
+                    <input type="text" name="username" placeholder="Usuario">
+                    <input type="text" name="email" placeholder="Email">
+                    <input type="password" name="senha" placeholder="Senha">
+                    <input type="password" name="confirmacao_de_senha" placeholder="Confirme sua senha">
+                    <button type="submit">Criar Conta</button>
+                </form>
+                <span translate="no">Já é um Usuario? <a href="/login">Faça o Login</a></span>
+            </div>
+        </div>
+    </main>
+    <script>
+        const home = document.querySelector('.cabecalho_info')
+        home.addEventListener('click', () => {
+           window.location.href = '/'
+        })
+    </script>
+    <script src="/registro.js"></script>
+</body>
+</html>

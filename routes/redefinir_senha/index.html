@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/redefinir_senha.css">
+    <script src="https://kit.fontawesome.com/61cf2d802c.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Nova Senha</title>
+</head>
+<body>
+    <header>
+        <div class="cabecalho_info">
+            <img src="/sms_temporario_logo.png" alt="Logo">
+            <h1 translate="no">RecebaSMS.com</h1>
+        </div>
+    </header>
+    <main>
+        <div class="redefinicao-container">
+            <div class="redefinicao-container-info">
+                <h1>Nova Senha</h1>
+                <p>Adicione sua nova Senha</p>
+                <form class = "redefinir_senha" onsubmit="return false">
+                    <input translate = "no" type="password" name="Senha" placeholder="Nova Senha">
+                    <input translate = "no" type="password" name="confirme_senha" placeholder="Confirme a senha">
+                    <button translate="no" type="submit" class = "redefinir_senha_button">Redefinir</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="/redefinir.js"></script>
+</body>
+</html>

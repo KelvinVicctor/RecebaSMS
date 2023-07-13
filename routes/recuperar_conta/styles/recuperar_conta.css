@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(21, 52, 73);
+}
+
+header {
+    margin: 0%;
+    padding: 0%;
+    position: inherit;
+}
+
+.cabecalho_info {
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.cabecalho_info img{
+    width: 61px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.cabecalho_info h1{
+    font-size: 30px;
+    font-family: 'Microsoft YaHei UI', sans-serif;  
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+    float: left;
+    margin-top: 25px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+main .recuperacao-container {
+    background-color: rgb(252, 252, 252);
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+main .recuperacao-container .recuperacao-container-info h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(88, 88, 87);
+}
+main .recuperacao-container .recuperacao-container-info p {
+    text-align: center;
+    padding-top: 1.1rem;
+}
+
+main .recuperacao-container .recuperacao-container-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    transition: transform 0.5s ease-out;
+}
+
+main .recuperacao-container .recuperacao-container-info form input {
+    width: 130%;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(109, 108, 108, 0.562);
+}
+
+main .recuperacao-container .recuperacao-container-info form input::placeholder {
+    color: rgb(116, 114, 114);
+    font-size: 16px;
+}
+
+main .recuperacao-container .recuperacao-container-info form button {
+    width: 130%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(21, 52, 73);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* media screen desktop */
+@media only screen and (min-width: 977px) {
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+}
+
+/* media screen mobile */
+@media only screen and (max-width: 977px) {
+    .cabecalho_info h1 {
+        font-size: 21px;
+    }
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+}
+
+/* Redimensionar  Formulario de Login */
+@media only screen and (max-width: 460px){
+    main .recuperacao-container {
+        width: 440px
+    }
+}
+
+@media only screen and (max-width: 447px){
+    main .recuperacao-container {
+        width: 430px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    main .recuperacao-container {
+        width: 415px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 422px){
+    main .recuperacao-container {
+        width: 400px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    main .recuperacao-container {
+        width: 390px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 388px){
+    main .recuperacao-container {
+        width: 370px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    main .recuperacao-container {
+        width: 360px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    main .recuperacao-container {
+        width: 340px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+
+@media only screen and (max-width: 340px){
+    main .recuperacao-container {
+        width: 320px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    main .recuperacao-container {
+        width: 300px
+    }
+
+    main .recuperacao-container .recuperacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .recuperacao-container .recuperacao-container-info form input {
+        max-width: 310px;
+    }
+}

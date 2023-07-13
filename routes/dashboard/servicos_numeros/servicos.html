@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-live-search="true">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/61cf2d802c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/servicos.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Obter Números & SMS</title>
+    <script>
+      function checkCookie(cookiename){
+         const cookie = document.cookie;
+         if(cookie.includes(cookiename)){
+            return true
+         }
+         return false
+      }
+      if(checkCookie('user_token') == false){
+         window.location.href = '/login'
+      }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+          <img src="/sms_temporario_logo.png" alt="ReceiveSMS.com Logo">
+          <h1>Receba<span class="green-text">SMS</span>.com</h1>
+        </div>
+      </header>
+      <div class="container">
+        <div class="container-info">
+            <h3 class="info-text">Obter Número</h3>
+            <section  class="services_numbers">
+              <h4>Selecione o Serviço</h4>
+                <select class="selecionar_servico"><option value="Selecione Servico" disabled selected>Obtendo Serviços</option></select>
+                <h4>Selecione o país</h4>
+                <select class="selecionar_pais"><option value="Selecione Pais" disabled selected>Recomendado usar o Brazil</option></select>
+                <h4>Selecione a Operadora</h4>
+                <select class="selecionar_operadora">
+                  <option value="" disabled selected>Obtendo Operadora</option>
+                </select>
+            </section>
+            <div class="btn_button">
+                <button class="btn btn-success btn-voltar">Voltar</button>
+                <button class="btn btn-success btn-comprar">Comprar</button>
+            </div>
+           <section class="caixa_sms" style="display:none">
+             <h4>Numero Gerado</h4>
+             <textarea class="numero-info"></textarea>
+             <h4>Caixa de SMS</h4>
+             <textarea class="codigo-info"></textarea>
+           </section>
+          <div class="btn_button_atualizar" style="display:none">
+                <button class="btn btn-success btn-voltar-painel">Voltar</button>
+                <button class="btn btn-success btn-atualizar">Atualizar</button>
+            </div>
+        </div>
+      </div>
+</body>
+<script src="/getServices.js"></script>
+<script src="/getOperators.js"></script>
+<script src="/getCountries.js"></script>
+<script src="/services_numbers.js"></script>
+<script src="/inbox.js"></script>
+<script>
+  const voltar = document.querySelector('.btn.btn-success.btn-voltar')
+  voltar.addEventListener('click', () => {
+     window.location.href = '/dashboard'
+  })
+  var textarea_numero = document.querySelector('.numero-info')
+  textarea_numero.setAttribute("readonly","readonly")
+  var textarea_codigo = document.querySelector('.codigo-info')
+  textarea_codigo.setAttribute("readonly","readonly")
+  textarea_codigo.value = 'Aguardando o SMS'
+  const voltar_painel_two = document.querySelector('.btn.btn-success.btn-voltar-painel')
+  voltar_painel_two.addEventListener('click', () => {
+     if(textarea_codigo.value == 'Aguardando o SMS'){
+       swal({
+        title: "Tem Certeza?",
+        icon: 'info',
+        text: "Esse número está aguardando o SMS, Se você retornar para o painel, não podera receber mais sms nesse número",
+        buttons: {
+          cancel: 'Continuar',
+          confirm: 'Voltar'
+        },
+        closeOnClickOutside: false
+       })
+       .then((value) => {
+        if(value){
+          window.location.href = '/dashboard'
+        }
+       })
+     }
+     else {
+       window.location.href = '/dashboard'
+     }
+  })
+</script>
+</html>

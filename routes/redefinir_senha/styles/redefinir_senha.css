@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgb(21, 52, 73);
+}
+
+header {
+    margin: 0%;
+    padding: 0%;
+    position: inherit;
+}
+
+.cabecalho_info {
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+}
+
+.cabecalho_info img{
+    width: 60px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.cabecalho_info h1{
+    font-size: 30px;
+    font-family: 'Microsoft YaHei UI', sans-serif;  
+    font-weight: 400;
+    margin: 0%;
+    padding: 0%;
+    float: left;
+    margin-top: 25px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+}
+main .redefinicao-container {
+    background-color: rgb(252, 252, 252);
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+}
+main .redefinicao-container .redefinicao-container-info h1 {
+    text-align: center;
+    margin-top: 30px;
+    color: rgb(88, 88, 87);
+}
+main .redefinicao-container .redefinicao-container-info p {
+    text-align: center;
+    padding-top: 1.1rem;
+}
+
+main .redefinicao-container .redefinicao-container-info form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    transition: transform 0.5s ease-out;
+}
+
+main .redefinicao-container .redefinicao-container-info form input {
+    width: 130%;
+    height: 30px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    background-color: rgba(109, 108, 108, 0.562);
+}
+
+main .redefinicao-container .redefinicao-container-info form input::placeholder {
+    color: rgb(116, 114, 114);
+    font-size: 16px;
+}
+
+main .redefinicao-container .redefinicao-container-info form button {
+    width: 130%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background-color: rgb(21, 52, 73);
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/* media screen desktop */
+@media only screen and (min-width: 977px) {
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+}
+
+/* media screen mobile */
+@media only screen and (max-width: 977px) {
+    .cabecalho_info h1 {
+        font-size: 21px;
+    }
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+}
+
+/* Redimensionar  Formulario de Login */
+@media only screen and (max-width: 460px){
+    main .redefinicao-container {
+        width: 440px
+    }
+}
+
+@media only screen and (max-width: 447px){
+    main .redefinacao-container {
+        width: 430px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 426px){
+    main .redefinicao-container {
+        width: 415px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 422px){
+    main .redefinicao-container {
+        width: 400px
+    }
+
+    main .redefinicao-container .redefinacao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    main .redefinicao-container {
+        width: 390px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 388px){
+    main .redefinicao-container {
+        width: 370px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    main .redefinicao-container {
+        width: 360px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 360px){
+    main .redefinicao-container {
+        width: 340px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+
+@media only screen and (max-width: 340px){
+    main .redefinicao-container {
+        width: 320px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
+
+@media only screen and (max-width: 320px){
+    main .redefinicao-container {
+        width: 300px
+    }
+
+    main .redefinicao-container .redefinicao-container-info form button {
+        max-width: 310px;
+    }
+
+    main .redefinicao-container .redefinicao-container-info form input {
+        max-width: 310px;
+    }
+}
