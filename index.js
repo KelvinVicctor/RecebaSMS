@@ -327,7 +327,7 @@ app.post('/recuperar_senha', async (req, res) => {
                 from: 'RecebaSMS Recuperação' + '<' + process.env.EMAIL + '>',
                 to: bodyEmail,
                 subject: 'RecebaSMS.com - Redefinição de Senha',
-                text: 'Olá! você solicitou a redefinição de senha ' + '\n' + 'Para redefinir, clique neste link: https://recebasms.devcarloss.repl.co/resetar-senha?token=' + password_token
+                text: 'Olá! você solicitou a redefinição de senha ' + '\n' + 'Para redefinir, clique neste link: https://recebasms.com/resetar-senha?token=' + password_token
               };
 
               transporter.sendMail(mailOptions, function(error, info) {
